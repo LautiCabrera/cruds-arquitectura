@@ -1,0 +1,107 @@
+/* Botón Salud */
+
+.medical {
+    border-color: grey !important;
+    color: white !important;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #78a5d4 !important; 
+    transition: box-shadow 0.3s ease-in-out; 
+  }
+  
+  .medical:hover {
+    color: white !important;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Selector salud */
+  
+  .select-medical {
+    width: 100%;
+    height: 45px; 
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    border: 1px solid #78a5d4 !important;
+    border-radius: 5px; 
+    background-color: #f8f9fa;
+    appearance: none;
+    cursor: pointer;
+    background-position: right 10px center;
+    background-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  /* Tabla Salud */
+  
+  .table-medical {
+    background-color: #ffffff; 
+    border: 1px solid #dddddd; 
+    border-collapse: collapse; 
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+  }
+  
+  .table-medical th {
+    background-color: #78a5d4 !important; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 10px;
+    border: 1px solid #dddddd !important;
+  }
+  
+  .table-medical td {
+    color: #666; 
+    text-align: left;
+    padding: 8px; 
+    border: 1px solid #dddddd !important; 
+  }
+  
+  /* Input salud*/
+  
+  .input-medical {
+    background-color: #ffff; 
+    border: 2px solid #78a5d4 !important; 
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    height: 60px;
+    width: 100%; 
+  }
+  
+  .service-img-wrapper {
+    height: 200px; /* Establece la altura deseada para todas las imágenes */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+}
+
+.service-img-wrapper img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.color {
+    background-color: #78a5d4 !important;
+}
+
+.navbar {
+    padding: 1rem; 
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #274464; 
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

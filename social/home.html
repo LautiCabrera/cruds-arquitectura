@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <title>MiRedSocial</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">MiRedSocial</a>
+        <button class="cta" data-bs-toggle="modal" data-bs-target="#createPostModal">Crear publicación</button>
+    </header>
+
+    <!-- Sidebar (visible solo en pantallas grandes) -->
+    <aside class="sidebar d-none d-lg-block">
+        <div class="text-center">
+            <img src="https://www.fundacionkonex.org/custom/web/data/imagenes/repositorio/2021/03/12/16575/2021031202544061e0e3f25c3041f849de6b510817fb34.jpg"
+                alt="Perfil" class="profile-pic">
+            <h5>Leonel Messi</h5>
+        </div>
+        <nav class="mt-4">
+            <a href="#">Inicio</a>
+            <a href="#">Perfil</a>
+            <a href="#">Mensajes</a>
+            <a href="#">Configuración</a>
+        </nav>
+    </aside>
+
+    <!-- Feed principal -->
+    <main class="feed">
+        <div class="container">
+            <div class="row">
+
+                <!-- Publicación 1 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://scontent.fscl5-1.fna.fbcdn.net/v/t31.18172-1/19575201_10212114135621740_5322702061552143532_o.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=e4545e&_nc_eui2=AeHVUD1rSVx1kX1gSMVVOZm1RKfK56DKI2tEp8rnoMojaw7Qoj49P3f_EASeOn0CTZJmRqzHG3fwZcmFUKq28L2J&_nc_ohc=tT0SWvHZ3nUQ7kNvgGi_TIp&_nc_zt=24&_nc_ht=scontent.fscl5-1.fna&_nc_gid=AqD-teUTkKqPBz3JpU__imI&oh=00_AYBtW6nscBlG8HhnEFXTE685UR6Uw58pCQ8JEHrR9DviVQ&oe=6748EFCC"
+                            alt="Enzo Barlotta">
+                        <h6>Enzo Barlotta</h6>
+                    </div>
+                    <img src="https://i.blogs.es/e32e91/trucos-enfocar-fotografia-paisaje-01/1366_2000.jpg"
+                        alt="Publicación de Enzo Barlotta">
+                    <div class="post-content">
+                        <p>Explorando los mejores paisajes en mi última aventura. 🌄 #viaje #naturaleza</p>
+                    </div>
+                    <div class="post-actions">
+                        <span class="action-btn">❤️</span>
+                        <span class="action-btn">💬</span>
+                        <span class="action-btn">🔗</span>
+                    </div>
+                </div>
+
+                <!-- Publicación 2 -->
+                <div class="post my-5">
+                    <div class="post-header">
+                        <img src="https://scontent.fscl5-1.fna.fbcdn.net/v/t1.6435-1/38437688_2198542190175580_2289041341964877824_n.jpg?stp=c150.0.900.900a_dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=e4545e&_nc_eui2=AeEIDLg2OHdyJR8N8WSVmMVavi34mhhY4Dy-LfiaGFjgPIWBFlwdM6G_inizh6nsfmqdFyQRFJ1Dwu6BYxyVh-_0&_nc_ohc=8O9ntnNiim8Q7kNvgFLzUqk&_nc_zt=24&_nc_ht=scontent.fscl5-1.fna&_nc_gid=AL7EHs2IMCkXqcQSV2zDTei&oh=00_AYBh-Tf4P_B7mRgt7ItLmTDqFsIIK6Sb47AoJL4IpRLlFQ&oe=6748EF11"
+                            alt="Fabio Hodar">
+                        <h6>Fabio Hodar</h6>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3"
+                        alt="Publicación de Fabio Hodar">
+                    <div class="post-content">
+                        <p>Un día soleado para disfrutar del mar 🌊☀️ #playa #verano</p>
+                    </div>
+                    <div class="post-actions">
+                        <span class="action-btn">❤️</span>
+                        <span class="action-btn">💬</span>
+                        <span class="action-btn">🔗</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para crear publicación -->
+    <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createPostModalLabel">Nueva publicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="postImage" class="form-label">Imagen</label>
+                            <input type="file" class="form-control" id="postImage">
+                        </div>
+                        <div class="mb-3">
+                            <label for="postContent" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="postContent" rows="3"
+                                placeholder="¿Qué estás pensando?"></textarea>
+                        </div>
+                        <button type="submit" class="btn color">Publicar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú de navegación inferior (visible solo en pantallas pequeñas) -->
+    <nav class="bottom-nav d-lg-none">
+        <a href="#"><i class="bi bi-house"></i></a>
+        <a href="#"><i class="bi bi-person"></i></a>
+        <a data-bs-toggle="modal" data-bs-target="#createPostModal" class="post-button"><i
+                class="bi bi-plus-circle color"></i></a>
+        <a href="#"><i class="bi bi-chat"></i></a>
+        <a href="#"><i class="bi bi-gear"></i></a>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

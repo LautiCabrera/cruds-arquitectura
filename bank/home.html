@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>Bankito</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bankito</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="main-content">
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Bienvenido a Bankito</h1>
+            <p class="text-center text-muted mb-5">Gestiona tus cuentas, transacciones y más de forma fácil y segura.
+            </p>
+
+            <div class="row justify-content-center">
+
+                <!-- Historial de Transacciones -->
+                <div class="col-md-10 col-sm-12 mt-4">
+                    <h4 class="text-center">Historial de Transacciones</h4>
+
+                    <!-- Contenedor para buscador, botón y selector -->
+                    <div class="d-flex align-items-center mb-3">
+                        <input type="text" class="form-control input-bank me-2"
+                            placeholder="Ingrese monto, fecha o descripción" style="flex: 2;">
+                        <button class="btn bank me-2" style="flex: 1;">Buscar</button>
+                        <select class="form-control bank-select" style="flex: 1;">
+                            <option>- Seleccione un filtro -</option>
+                            <option>Cuenta de Ahorros</option>
+                            <option>Cuenta Corriente</option>
+                            <option>Tarjeta de Crédito</option>
+                        </select>
+                    </div>
+
+                    <!-- Tabla de Transacciones (Usando divs) -->
+                    <div class="bank-table-container">
+                        <!-- Encabezados de la Tabla -->
+                        <div class="bank-table-row bank-table-header">
+                            <div class="bank-table-cell">Fecha</div>
+                            <div class="bank-table-cell">Descripción</div>
+                            <div class="bank-table-cell">Monto</div>
+                        </div>
+                        <!-- Filas de la Tabla -->
+                        <div class="bank-table-row">
+                            <div class="bank-table-cell">01/10/2024</div>
+                            <div class="bank-table-cell">Depósito en Efectivo</div>
+                            <div class="bank-table-cell">$1,000</div>
+                        </div>
+                        <div class="bank-table-row">
+                            <div class="bank-table-cell">05/10/2024</div>
+                            <div class="bank-table-cell">Pago de Servicios</div>
+                            <div class="bank-table-cell">-$200</div>
+                        </div>
+                        <div class="bank-table-row">
+                            <div class="bank-table-cell">10/10/2024</div>
+                            <div class="bank-table-cell">Compra en Supermercado</div>
+                            <div class="bank-table-cell">-$150</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sección de Información Adicional -->
+            <div class="row text-center mt-5 justify-content-center">
+                <div class="col-md-4 m-2 card p-3 shadow-sm">
+                    <h5>Tarjetas de Crédito</h5>
+                    <p class="text-muted">Obtén la tarjeta que mejor se ajuste a tus necesidades.</p>
+                </div>
+                <div class="col-md-4 m-2 card p-3 shadow-sm">
+                    <h5>Préstamos</h5>
+                    <p class="text-muted">Financia tus proyectos con nuestras tasas competitivas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Bankito. Todos los derechos reservados.</p>
+            <p class="text-secondary">Términos y Condiciones | Política de Privacidad</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
